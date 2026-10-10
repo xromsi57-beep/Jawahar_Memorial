@@ -21,26 +21,27 @@ body {
   line-height: 1.7;
 }
 
-/* Header Banner with School Photo Background */
+/* Header Banner - Clear Background Image */
 header {
-  background: linear-gradient(rgba(10, 35, 75, 0.88), rgba(10, 35, 75, 0.88)), 
+  background: linear-gradient(rgba(10, 35, 75, 0.65), rgba(10, 35, 75, 0.65)), 
               url('school-bg.jpg') center/cover no-repeat;
   color: white;
-  padding: 40px 15px;
+  padding: 45px 15px;
   text-align: center;
   border-bottom: 3px solid #f4b942;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 header h1 {
   font-size: clamp(24px, 4vw, 38px);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
 header p {
-  font-size: 15px;
-  opacity: 0.95;
+  font-size: 16px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 /* Notice Ticker Bar */
@@ -69,7 +70,7 @@ header p {
 /* Navigation Bar */
 nav {
   background: #0b2850;
-  padding: 10px 15px;
+  padding: 12px 15px;
   text-align: center;
   position: sticky;
   top: 0;
@@ -92,27 +93,29 @@ nav a:hover {
   transform: translateY(-1px);
 }
 
-/* Hero Section */
+/* Hero Section - Sharp Clear Background */
 .hero {
-  background: linear-gradient(rgba(13, 46, 90, 0.82), rgba(24, 82, 148, 0.82)), 
+  background: linear-gradient(rgba(13, 46, 90, 0.6), rgba(24, 82, 148, 0.6)), 
               url('school-bg.jpg') center/cover no-repeat;
   color: white;
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .hero h2 {
   color: #f4b942;
   font-size: clamp(28px, 5vw, 45px);
   margin-bottom: 15px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
 .hero p {
   margin: 10px auto 20px auto;
   max-width: 720px;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.8;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
 /* Buttons */
@@ -129,14 +132,14 @@ button, .btn {
   text-decoration: none;
   margin: 6px 5px;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 button:hover, .btn:hover {
   background: #ffffff;
   color: #0b2850;
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
 
 .btn-secondary {
@@ -211,22 +214,26 @@ h2.section-title::after {
   display: inline-block;
 }
 
-/* Principal Circle Frame */
+/* Principal Circle Frame Fixed */
 .profile-img-container {
-  width: 135px;
-  height: 135px;
+  width: 140px;
+  height: 140px;
   margin: 0 auto 15px auto;
   border-radius: 50%;
   border: 4px solid #f4b942;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-  background: #e6eef9;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .notice {
@@ -341,7 +348,7 @@ footer p {
   }
 
   .hero {
-    padding: 55px 15px;
+    padding: 60px 15px;
   }
 
   section {
@@ -424,7 +431,10 @@ footer p {
 
     <div class="card">
       <div class="profile-img-container">
-        <img src="principal.jpg" alt="Principal Manjeet Ma'am" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png';">
+        <!-- Principal image with multiple fallbacks if image path differs -->
+        <img src="principal.jpg" 
+             alt="Principal Manjeet Ma'am" 
+             onerror="this.onerror=null; this.src='principal.png';">
       </div>
       <h3>Manjeet (मंजीत)</h3>
       <p><strong>Principal / प्रधानाचार्य</strong></p>
