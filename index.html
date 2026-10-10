@@ -1,469 +1,388 @@
+
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ग्राम पंचायत सरपंच चुनाव पोल</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .poll-container {
-            background: #ffffff;
-            width: 100%;
-            max-width: 600px;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        }
-        h2 {
-            color: #1a1a1a;
-            font-size: 22px;
-            margin-top: 0;
-            margin-bottom: 5px;
-            line-height: 1.4;
-        }
-        .meta-info {
-            color: #666;
-            font-size: 13px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .live-badge {
-            background-color: #d1fae5;
-            color: #065f46;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: bold;
-        }
-        .choice-title {
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-        .email-box {
-            margin-bottom: 20px;
-        }
-        .email-box label {
-            display: block;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-        .email-box input {
-            width: 100%;
-            padding: 10px 12px;
-            border: 2px solid #e1e4e8;
-            border-radius: 8px;
-            font-size: 15px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .email-box input:focus {
-            border-color: #4f46e5;
-        }
-        .options-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 25px;
-        }
-        .option-item {
-            display: flex;
-            align-items: center;
-            padding: 12px 15px;
-            border: 2px solid #e1e4e8;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .option-item:hover {
-            border-color: #4f46e5;
-            background-color: #fafafe;
-        }
-        .option-item input {
-            margin-right: 12px;
-            transform: scale(1.2);
-            accent-color: #4f46e5;
-        }
-        .option-label {
-            font-size: 16px;
-            color: #2d3748;
-            font-weight: 500;
-        }
-        .btn-group {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 6px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .btn-vote {
-            background-color: #4f46e5;
-            color: white;
-            flex: 1;
-        }
-        .btn-vote:hover {
-            background-color: #4338ca;
-        }
-        .btn-results, .btn-share {
-            background-color: #ffffff;
-            color: #4b5563;
-            border: 1px solid #d1d5db;
-        }
-        .btn-results:hover, .btn-share:hover {
-            background-color: #f3f4f6;
-        }
-        
-        .results-container {
-            margin-top: 20px;
-            display: none;
-        }
-        .result-bar-item {
-            margin-bottom: 12px;
-        }
-        .result-info {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            font-weight: 500;
-            color: #374151;
-            margin-bottom: 5px;
-        }
-        .bar-background {
-            background-color: #e5e7eb;
-            border-radius: 6px;
-            height: 12px;
-            width: 100%;
-            overflow: hidden;
-        }
-        .bar-fill {
-            background-color: #4f46e5;
-            height: 100%;
-            width: 0%;
-            transition: width 0.8s ease-in-out;
-            border-radius: 6px;
-        }
-        .alert-msg {
-            background-color: #ecfdf5;
-            color: #065f46;
-            padding: 10px;
-            border-radius: 6px;
-            font-size: 14px;
-            margin-bottom: 15px;
-            border: 1px solid #a7f3d0;
-            display: none;
-        }
-        .privacy-footer {
-            margin-top: 25px;
-            text-align: center;
-            font-size: 12px;
-            color: #6b7280;
-            border-top: 1px dashed #e5e7eb;
-            padding-top: 12px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#123b72">
+<title>Jawahar Memorial Sikshansthan</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fc;
+  color: #263449;
+  line-height: 1.7;
+}
+
+header {
+  background: #123b72;
+  color: white;
+  padding: 22px 15px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: clamp(22px, 4vw, 36px);
+}
+
+nav {
+  background: #0b2850;
+  padding: 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 6px 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f4b942;
+}
+
+.hero {
+  background: linear-gradient(135deg, #123b72, #2674b8);
+  color: white;
+  padding: 75px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #f4b942;
+  font-size: clamp(28px, 5vw, 45px);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin: 10px auto;
+  max-width: 700px;
+}
+
+button, .btn {
+  display: inline-block;
+  background: #f4b942;
+  color: #123b72;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+section {
+  padding: 45px 20px;
+  max-width: 1100px;
+  margin: auto;
+  scroll-margin-top: 60px;
+}
+
+h2.section-title {
+  color: #123b72;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 27px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px #0001;
+}
+
+.card h3 {
+  color: #123b72;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.notice {
+  background: #fff0ca;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  background: #e6eef9;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stats strong {
+  font-size: 30px;
+  color: #123b72;
+}
+
+.map {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 10px;
+}
+
+footer {
+  background: #081c38;
+  color: white;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media(max-width: 600px) {
+  nav a {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 55px 15px;
+  }
+
+  section {
+    padding: 35px 15px;
+  }
+}
+</style>
 </head>
+
 <body>
 
-<div class="poll-container">
-    <h2>ग्राम पंचायत बाग से अगला सरपंच कौन होगा?</h2>
-    <div class="meta-info">
-        <span>सुरक्षित पोलिंग सिस्टम</span>
-        <span class="live-badge">✓ सुरक्षित</span>
-    </div>
+<header>
+  <h1>Jawahar Memorial Sikshansthan</h1>
+  <p>जवाहर मेमोरियल शिक्षण संस्थान</p>
+  <p>Manota Khurd, Jhunjhunu, Rajasthan</p>
+</header>
 
-    <div id="alertBox" class="alert-msg"></div>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#management">Management</a>
+  <a href="#teachers">Teachers</a>
+  <a href="#results">Results</a>
+  <a href="#location">Location</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <!-- Voting Form Section -->
-    <div id="votingSection">
-        <div class="email-box">
-            <label for="voterEmail">अपनी ईमेल आईडी दर्ज करें (एक ईमेल से केवल 1 वोट मान्य):</label>
-            <input type="email" id="voterEmail" placeholder="example@gmail.com" required>
-        </div>
+<main>
 
-        <div class="choice-title">अपना एक विकल्प चुनें:</div>
-        <div class="options-list" id="optionsList"></div>
-
-        <div class="btn-group">
-            <button class="btn btn-vote" id="voteBtn" onclick="submitVote()">वोट दें →</button>
-            <button class="btn btn-results" onclick="showResultsView()">परिणाम देखें</button>
-            <button class="btn btn-share" onclick="sharePoll()">शेयर करें</button>
-        </div>
-    </div>
-
-    <!-- Live Results Section -->
-    <div id="resultsSection" class="results-container">
-        <div class="choice-title" id="resultsTitle">लाइव परिणाम (कुल वोट: <span id="totalVotesCount">0</span>)</div>
-        <div id="barChartsList"></div>
-        <div style="margin-top: 20px; display: flex; gap: 10px;">
-            <button class="btn btn-results" onclick="toggleVotingView()" style="flex: 1;">← वोट पर वापस जाएं</button>
-            <button class="btn btn-results" onclick="initPoll()" style="background: #f3f4f6;">🔄 रिफ्रेश करें</button>
-        </div>
-    </div>
-
-    <div class="privacy-footer">
-        🔒 आपके वोट सुरक्षित रूप से काउंट हो रहे हैं और कभी डिलीट नहीं होंगे।
-    </div>
+<div class="hero" id="home">
+  <h2>आपका भविष्य, हमारी जिम्मेदारी</h2>
+  <p>Welcome to Jawahar Memorial Sikshansthan</p>
+  <p>
+    शिक्षा, संस्कार और सफलता की ओर एक कदम।
+    हमारा उद्देश्य विद्यार्थियों को ज्ञान,
+    अनुशासन और आत्मविश्वास के साथ आगे बढ़ने के अवसर देना है।
+  </p>
+  <a class="btn" href="#about">हमारे विद्यालय के बारे में</a>
+  <a class="btn" href="#results">परीक्षा परिणाम</a>
 </div>
 
+<section id="about">
+  <h2 class="section-title">About Our School | हमारे विद्यालय के बारे में</h2>
+  <div class="card">
+    <div class="icon">🏫</div>
+    <h3>हमारा विद्यालय</h3>
+    <p>
+      Jawahar Memorial Sikshansthan राजस्थान के
+      झुंझुनूं जिले के मनोटा खुर्द क्षेत्र में स्थित है।
+    </p>
+    <p>
+      विद्यालय का उद्देश्य विद्यार्थियों को गुणवत्तापूर्ण शिक्षा,
+      अच्छे संस्कार, अनुशासन और उज्ज्वल भविष्य की दिशा में
+      आगे बढ़ने के लिए प्रेरित करना है।
+    </p>
+  </div>
+</section>
+
+<section id="management">
+  <h2 class="section-title">School Management | विद्यालय प्रबंधन</h2>
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">👨‍💼</div>
+      <h3>Mr. JAISINGH</h3>
+      <p><strong>Director / निदेशक</strong></p>
+      <p>
+        विद्यालय के नेतृत्व, प्रबंधन और संस्थान के विकास में
+        निदेशक की महत्वपूर्ण भूमिका होती है।
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👨‍🏫</div>
+      <h3>Manjeet (मंजीत)</h3>
+      <p><strong>Principal / प्रधानाचार्य</strong></p>
+      <p>
+        प्रधानाचार्य विद्यालय की शैक्षणिक गतिविधियों,
+        अनुशासन और शिक्षण व्यवस्था का मार्गदर्शन करते हैं।
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="teachers">
+  <h2 class="section-title">Our Teachers | हमारे शिक्षक</h2>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">👨‍🏫</div>
+      <h3>23 शिक्षक</h3>
+      <p>विद्यालय में कुल 23 शिक्षक कार्यरत हैं।</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👨‍🏫</div>
+      <h3>13 पुरुष शिक्षक</h3>
+      <p>Male Teachers: 13</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👩‍🏫</div>
+      <h3>10 महिला शिक्षक</h3>
+      <p>Female Teachers: 10</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:20px">
+    <h3>शिक्षण विषय | Subjects</h3>
+    <p>
+      व्यक्तिगत शिक्षकों के नाम और उनके विषयों की पूरी सूची
+      अभी उपलब्ध नहीं है। सत्यापित जानकारी मिलने पर
+      इसे वेबसाइट पर अपडेट किया जा सकता है।
+    </p>
+  </div>
+</section>
+
+<section id="results">
+  <h2 class="section-title">Board Results | बोर्ड परीक्षा परिणाम</h2>
+
+  <div class="notice">
+    सूचना: विद्यालय के पिछले वर्षों के वास्तविक बोर्ड परिणाम
+    अभी उपलब्ध नहीं हैं। इसलिए कोई काल्पनिक अंक या पास प्रतिशत
+    नहीं दिखाया गया है।
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">📘</div>
+      <h3>Class 10th Result</h3>
+      <p>कक्षा 10वीं का परिणाम</p>
+      <p id="result10">आधिकारिक परिणाम अभी उपलब्ध नहीं है।</p>
+      <button onclick="showResult('10')">स्थिति देखें</button>
+    </div>
+
+    <div class="card">
+      <div class="icon">📗</div>
+      <h3>Class 12th Result</h3>
+      <p>कक्षा 12वीं का परिणाम</p>
+      <p id="result12">आधिकारिक परिणाम अभी उपलब्ध नहीं है।</p>
+      <button onclick="showResult('12')">स्थिति देखें</button>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <h2 class="section-title">School Location | विद्यालय का स्थान</h2>
+
+  <div class="card">
+    <div class="icon">📍</div>
+    <h3>Jawahar Memorial Sikshansthan</h3>
+    <p>Manota Khurd, Jhunjhunu, Rajasthan, India</p>
+    <br>
+
+    <iframe
+      class="map"
+      title="Manota Khurd Jhunjhunu Map"
+      src="https://maps.google.com/maps?q=Manota%20Khurd%2C%20Jhunjhunu%2C%20Rajasthan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      loading="lazy">
+    </iframe>
+
+    <a class="btn"
+       href="https://www.google.com/maps/search/?api=1&query=Jawahar+Memorial+Sikshansthan+Manota+Khurd+Jhunjhunu"
+       target="_blank"
+       rel="noopener noreferrer">
+       Google Maps पर खोलें
+    </a>
+
+    <p style="margin-top:15px">
+      नोट: मैप मनोटा खुर्द क्षेत्र दिखाता है;
+      विद्यालय का सटीक पिन सत्यापित करना बाकी है।
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact | संपर्क जानकारी</h2>
+
+  <div class="card">
+    <div class="icon">📞</div>
+    <h3>विद्यालय से संपर्क</h3>
+    <p><strong>Director:</strong> Mr. JAISINGH</p>
+    <p><strong>Principal:</strong> Manjeet</p>
+    <p><strong>Address:</strong> Manota Khurd, Jhunjhunu, Rajasthan</p>
+    <p><strong>Phone:</strong> अभी उपलब्ध नहीं</p>
+    <p><strong>Email:</strong> अभी उपलब्ध नहीं</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h3>Jawahar Memorial Sikshansthan</h3>
+  <p>जवाहर मेमोरियल शिक्षण संस्थान</p>
+  <p>Manota Khurd, Jhunjhunu, Rajasthan</p>
+  <p>शिक्षा • संस्कार • सफलता</p>
+  <p>© <span id="year"></span> Jawahar Memorial Sikshansthan</p>
+</footer>
+
 <script>
-    const candidates = [
-        "सोनू (मोहित गोठड़िया)",
-        "पूनम (विकास)",
-        "सरोज (राकेश)",
-        "सरोज (प्रभु)",
-        "इंद्रावती (माडू मास्टर)",
-        "सुमन (रामनिवास)"
-    ];
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
-    const SHEETDB_API_URL = "https://sheetdb.io/api/v1/s1s6dqlqlszr6";
+function showResult(className) {
+  const message =
+    "कक्षा " + className +
+    "वीं का आधिकारिक परिणाम अभी उपलब्ध नहीं है।";
 
-    function renderOptions() {
-        const listDiv = document.getElementById('optionsList');
-        listDiv.innerHTML = '';
-        candidates.forEach((cand) => {
-            listDiv.innerHTML += `
-                <label class="option-item">
-                    <input type="radio" name="pollOption" value="${cand}">
-                    <span class="option-label">${cand}</span>
-                </label>
-            `;
-        });
-    }
-
-    // Local Storage stack ko load karne ka sabse surakshit tareeka
-    function getStoredStack() {
-        let localData = localStorage.getItem('sarpanch_final_stack_v3');
-        if (localData) {
-            try {
-                return JSON.parse(localData);
-            } catch (e) {
-                return [];
-            }
-        }
-        return [];
-    }
-
-    function saveStoredStack(stack) {
-        localStorage.setItem('sarpanch_final_stack_v3', JSON.stringify(stack));
-    }
-
-    async function initPoll() {
-        let voteStack = getStoredStack();
-
-        // SheetDB se data fetch karke naye votes merge karne ki koshish karenge (agar koi aur vote de toh)
-        try {
-            let response = await fetch(SHEETDB_API_URL);
-            let rows = await response.json();
-            
-            if (Array.isArray(rows) && rows.length > 0) {
-                rows.forEach(row => {
-                    let email = row.email || row.Email || row.EMAIL || Object.values(row)[0];
-                    let cand = row.candidate || row.Candidate || row.CANDIDATE || Object.values(row)[1];
-                    let time = row.timestamp || row.Timestamp || "";
-
-                    if (email && cand && typeof email === 'string' && typeof cand === 'string') {
-                        let cleanEmail = email.trim().toLowerCase();
-                        let cleanCand = cand.trim();
-                        
-                        let matched = candidates.find(c => 
-                            c.toLowerCase() === cleanCand.toLowerCase() || 
-                            c.includes(cleanCand) || 
-                            cleanCand.includes(c)
-                        );
-
-                        if (matched) {
-                            let exists = voteStack.some(v => v.email === cleanEmail);
-                            if (!exists) {
-                                voteStack.push({ email: cleanEmail, candidate: matched, timestamp: time });
-                            }
-                        }
-                    }
-                });
-                saveStoredStack(voteStack);
-            }
-        } catch (error) {
-            console.log("Using local secure stack memory.");
-        }
-
-        window.currentVoteStack = voteStack;
-        updateUI(voteStack);
-    }
-
-    function updateUI(voteStack) {
-        let votes = {
-            "सोनू (मोहित गोठड़िया)": 0,
-            "पूनम (विकास)": 0,
-            "सरोज (राकेश)": 0,
-            "सरोज (प्रभु)": 0,
-            "इंद्रावती (माडू मास्टर)": 0,
-            "सुमन (रामनिवास)": 0
-        };
-
-        voteStack.forEach(vote => {
-            if (votes[vote.candidate] !== undefined) {
-                votes[vote.candidate] += 1;
-            }
-        });
-
-        let total = voteStack.length;
-        document.getElementById('totalVotesCount').innerText = total;
-
-        const chartsDiv = document.getElementById('barChartsList');
-        chartsDiv.innerHTML = '';
-
-        candidates.forEach(cand => {
-            const count = votes[cand] || 0;
-            const percentage = total > 0 ? ((count / total) * 100).toFixed(1) : 0;
-
-            chartsDiv.innerHTML += `
-                <div class="result-bar-item">
-                    <div class="result-info">
-                        <span>${cand}</span>
-                        <span>${count} वोट (${percentage}%)</span>
-                    </div>
-                    <div class="bar-background">
-                        <div class="bar-fill" style="width: ${percentage}%"></div>
-                    </div>
-                </div>
-            `;
-        });
-    }
-
-    async function submitVote() {
-        const emailInput = document.getElementById('voterEmail').value.trim().toLowerCase();
-        const selected = document.querySelector('input[name="pollOption"]:checked');
-        const voteBtn = document.getElementById('voteBtn');
-
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailInput || !emailRegex.test(emailInput)) {
-            showAlert('#fef2f2', '#991b1b', '#f87171', 'कृपया अपनी सही ईमेल आईडी दर्ज करें!');
-            return;
-        }
-
-        if (!selected) {
-            showAlert('#fef2f2', '#991b1b', '#f87171', 'कृपया वोट देने के लिए किसी एक उम्मीदवार को चुनें!');
-            return;
-        }
-
-        let voteStack = getStoredStack();
-
-        // Check karo ki email pehle se vote de chuka hai ya nahi
-        let alreadyVoted = voteStack.some(v => v.email === emailInput);
-        if (alreadyVoted) {
-            showAlert('#fef3c7', '#92400e', '#fde68a', 'इस ईमेल आईडी से पहले ही वोट दिया जा चुका है! एक ईमेल से केवल एक ही वोट मान्य है।');
-            showResultsView();
-            return;
-        }
-
-        voteBtn.innerText = 'वोट दर्ज हो रहा है...';
-        voteBtn.disabled = true;
-
-        const choice = selected.value;
-        const newVote = {
-            email: emailInput,
-            candidate: choice,
-            timestamp: new Date().toLocaleString()
-        };
-
-        // 1. Stack me turant push karo aur LocalStorage me save karo taaki turant dikhe
-        voteStack.push(newVote);
-        saveStoredStack(voteStack);
-        window.currentVoteStack = voteStack;
-        updateUI(voteStack);
-
-        // 2. Background me SheetDB par bhejne ki koshish karo
-        const postData = {
-            data: [
-                {
-                    "email": newVote.email,
-                    "candidate": newVote.candidate,
-                    "timestamp": newVote.timestamp
-                }
-            ]
-        };
-
-        try {
-            await fetch(SHEETDB_API_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(postData)
-            });
-        } catch (error) {
-            console.log("Background sheet save error, data safely kept in stack.");
-        }
-
-        showAlert('#ecfdf5', '#065f46', '#a7f3d0', 'आपका वोट सफलतापूर्वक दर्ज कर लिया गया है!');
-        document.getElementById('voterEmail').value = '';
-        showResultsView();
-
-        voteBtn.innerText = 'वोट दें →';
-        voteBtn.disabled = false;
-    }
-
-    function showAlert(bgColor, textColor, borderColor, message) {
-        const alertBox = document.getElementById('alertBox');
-        alertBox.style.display = 'block';
-        alertBox.style.backgroundColor = bgColor;
-        alertBox.style.color = textColor;
-        alertBox.style.borderColor = borderColor;
-        alertBox.innerText = message;
-    }
-
-    function showResultsView() {
-        document.getElementById('votingSection').style.display = 'none';
-        document.getElementById('resultsSection').style.display = 'block';
-        initPoll();
-    }
-
-    function toggleVotingView() {
-        document.getElementById('resultsSection').style.display = 'none';
-        document.getElementById('votingSection').style.display = 'block';
-        document.getElementById('alertBox').style.display = 'none';
-    }
-
-    function sharePoll() {
-        if (navigator.share) {
-            navigator.share({
-                title: 'ग्राम पंचायत सरपंच चुनाव पोल',
-                text: 'देखिए गाँव के अगले सरपंच के लिए लाइव पोलिंग और अपना वोट दीजिए:',
-                url: window.location.href,
-            }).catch(() => {});
-        } else {
-            prompt('ये रहा पोल का लिंक, इसे कॉपी करके शेयर करें:', window.location.href);
-        }
-    }
-
-    window.onload = function() {
-        renderOptions();
-        initPoll();
-    };
+  if (className === "10") {
+    document.getElementById("result10").textContent = message;
+  } else if (className === "12") {
+    document.getElementById("result12").textContent = message;
+  }
+}
 </script>
 
 </body>
