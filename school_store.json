@@ -1,0 +1,910 @@
+{
+  "teachers": [
+    {
+      "id": "TCH-101",
+      "username": "sanjay.jinder",
+      "passwordHash": "Jawahar@123",
+      "name": "Mr. Sanjay Jinder",
+      "gender": "male",
+      "designation": "Counselor / मुख्य मार्गदर्शक",
+      "subject": "Educational Counseling & Leadership",
+      "phone": "9414011223",
+      "email": "counselor@jawaharmemorial.edu.in",
+      "assignedClass": "10th & 12th Career Guidance"
+    },
+    {
+      "id": "TCH-102",
+      "username": "manjeet.principal",
+      "passwordHash": "Jawahar@123",
+      "name": "Mrs. Manjeet",
+      "gender": "female",
+      "designation": "Principal / प्रधानाचार्य",
+      "subject": "School Administration & Academic Supervision",
+      "phone": "9414022334",
+      "email": "principal@jawaharmemorial.edu.in",
+      "assignedClass": "All Academic Classes"
+    },
+    {
+      "id": "TCH-103",
+      "username": "rajesh.math",
+      "passwordHash": "Jawahar@123",
+      "name": "Mr. Rajesh Kumar",
+      "gender": "male",
+      "designation": "Senior Mathematics Teacher (वरिष्ठ गणित अध्यापक)",
+      "subject": "Mathematics (गणित)",
+      "phone": "9829033445",
+      "email": "rajesh.math@jawaharmemorial.edu.in",
+      "assignedClass": "Class 10th-A"
+    },
+    {
+      "id": "TCH-104",
+      "username": "priya.english",
+      "passwordHash": "Jawahar@123",
+      "name": "Mrs. Priya Sharma",
+      "gender": "female",
+      "designation": "English Lecturer (व्याख्याता अंग्रेजी)",
+      "subject": "English Compulsory & Literature",
+      "phone": "9784044556",
+      "email": "priya.english@jawaharmemorial.edu.in",
+      "assignedClass": "Class 12th"
+    },
+    {
+      "id": "TCH-105",
+      "username": "suresh.science",
+      "passwordHash": "Jawahar@123",
+      "name": "Mr. Suresh Choudhary",
+      "gender": "male",
+      "designation": "Science Specialist (विज्ञान शिक्षक)",
+      "subject": "General Science & Chemistry",
+      "phone": "9672055667",
+      "email": "suresh.science@jawaharmemorial.edu.in",
+      "assignedClass": "Class 8th-B"
+    },
+    {
+      "id": "TCH-106",
+      "username": "sunita.hindi",
+      "passwordHash": "Jawahar@123",
+      "name": "Mrs. Sunita Saini",
+      "gender": "female",
+      "designation": "Language Teacher (हिंदी एवं संस्कृत शिक्षिका)",
+      "subject": "Hindi & Sanskrit",
+      "phone": "9587066778",
+      "email": "sunita.hindi@jawaharmemorial.edu.in",
+      "assignedClass": "Class 6th-A"
+    },
+    {
+      "id": "TCH-107",
+      "username": "amit.sst",
+      "passwordHash": "Jawahar@123",
+      "name": "Mr. Amit Verma",
+      "gender": "male",
+      "designation": "Social Sciences Mentor",
+      "subject": "History, Civics & Geography",
+      "phone": "9460077889",
+      "email": "amit.sst@jawaharmemorial.edu.in",
+      "assignedClass": "Class 9th-A"
+    },
+    {
+      "id": "TCH-108",
+      "username": "kavita.physics",
+      "passwordHash": "Jawahar@123",
+      "name": "Ms. Kavita Jangid",
+      "gender": "female",
+      "designation": "Physics Lecturer",
+      "subject": "Physics (भौतिक विज्ञान)",
+      "phone": "9352088990",
+      "email": "kavita.physics@jawaharmemorial.edu.in",
+      "assignedClass": "Class 11th-Science"
+    }
+  ],
+  "students": [
+    {
+      "id": "STU-1001",
+      "rollNo": 1014,
+      "admissionNo": "JM-2022-1014",
+      "name": "राहुल जिंदर (Rahul Jinder)",
+      "gender": "male",
+      "class": "Class 10th-A",
+      "parentPhone": "9876543210",
+      "fatherName": "Mr. संजय जिंदर (Sanjay Jinder)",
+      "motherName": "Mrs. सरिता जिंदर (Sarita Jinder)",
+      "dob": "2010-04-12",
+      "address": "वार्ड नंबर 4, मनोता खुर्द, झुंझुनूं (राज.)",
+      "avatar": "👨‍🎓",
+      "attendanceStats": {
+        "percentage": 95.8,
+        "daysPresent": 115,
+        "totalDays": 120,
+        "recentLog": [
+          {
+            "date": "2026-10-12",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-11",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-10",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-09",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-08",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-07",
+            "status": "leave"
+          },
+          {
+            "date": "2026-10-06",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-05",
+            "status": "present"
+          }
+        ]
+      },
+      "results": {
+        "firstMidterm": {
+          "termKey": "first_midterm",
+          "termTitle": "1st Mid-term Test (प्रथम परख परीक्षा)",
+          "maxTotal": 50,
+          "obtainedTotal": 44.5,
+          "percentage": 89,
+          "grade": "A+",
+          "rank": 3,
+          "remarks": "अद्भुत प्रदर्शन",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 10,
+              "marksObtained": 10,
+              "grade": "A+"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            },
+            {
+              "subject": "Social Science (सामाजिक विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 8,
+              "grade": "A"
+            }
+          ]
+        },
+        "secondMidterm": {
+          "termKey": "second_midterm",
+          "termTitle": "2nd Mid-term Test (द्वितीय परख परीक्षा)",
+          "maxTotal": 50,
+          "obtainedTotal": 46,
+          "percentage": 92,
+          "grade": "A+",
+          "rank": 2,
+          "remarks": "शानदार सुधार! सभी विषयों में प्रथम श्रेणी अंक प्राप्त किए।",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "Social Science (सामाजिक विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            }
+          ]
+        },
+        "halfYearly": {
+          "termKey": "half_yearly",
+          "termTitle": "Half-Yearly Examination (अर्धवार्षिक परीक्षा)",
+          "maxTotal": 100,
+          "obtainedTotal": 90.5,
+          "percentage": 90.5,
+          "grade": "A+ (Distinction)",
+          "rank": 2,
+          "remarks": "सत्र का उत्कृष्ट परिणाम! बोर्ड परीक्षा के लिए अग्रिम शुभकामनाएं।",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 100,
+              "marksObtained": 91,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 100,
+              "marksObtained": 88,
+              "grade": "A"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 100,
+              "marksObtained": 97,
+              "grade": "A+"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 100,
+              "marksObtained": 92,
+              "grade": "A+"
+            },
+            {
+              "subject": "Social Science (सामाजिक विज्ञान)",
+              "maxMarks": 100,
+              "marksObtained": 85,
+              "grade": "A"
+            }
+          ]
+        }
+      },
+      "feesStatus": {
+        "totalFee": 18500,
+        "paidFee": 18500,
+        "dueFee": 0,
+        "status": "paid",
+        "lastReceiptNo": "REC-2026-9041"
+      }
+    },
+    {
+      "id": "STU-1002",
+      "rollNo": 809,
+      "admissionNo": "JM-2023-809",
+      "name": "अंजलि जिंदर (Anjali Jinder)",
+      "gender": "female",
+      "class": "Class 8th-B",
+      "parentPhone": "9876543210",
+      "fatherName": "Mr. संजय जिंदर (Sanjay Jinder)",
+      "motherName": "Mrs. सरिता जिंदर (Sarita Jinder)",
+      "dob": "2012-09-24",
+      "address": "वार्ड नंबर 4, मनोता खुर्द, झुंझुनूं (राज.)",
+      "avatar": "👩‍🎓",
+      "attendanceStats": {
+        "percentage": 97.5,
+        "daysPresent": 117,
+        "totalDays": 120,
+        "recentLog": [
+          {
+            "date": "2026-10-12",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-11",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-10",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-09",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-08",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-07",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-06",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-05",
+            "status": "present"
+          }
+        ]
+      },
+      "results": {
+        "firstMidterm": {
+          "termKey": "first_midterm",
+          "termTitle": "1st Mid-term Test (प्रथम परख परीक्षा)",
+          "maxTotal": 50,
+          "obtainedTotal": 47,
+          "percentage": 94,
+          "grade": "A+",
+          "rank": 1,
+          "remarks": "कक्षा में प्रथम स्थान! अत्यंत मेधावी एवं अनुशासित छात्रा।",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "Sanskrit (संस्कृत)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            }
+          ]
+        },
+        "secondMidterm": {
+          "termKey": "second_midterm",
+          "termTitle": "2nd Mid-term Test (द्वितीय परख परीक्षा)",
+          "maxTotal": 50,
+          "obtainedTotal": 48.5,
+          "percentage": 97,
+          "grade": "A+",
+          "rank": 1,
+          "remarks": "कक्षा में पुनः प्रथम स्थान! भाषा एवं गणित में सर्वोच्च अंक।",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 10,
+              "marksObtained": 10,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 10,
+              "marksObtained": 10,
+              "grade": "A+"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            },
+            {
+              "subject": "Sanskrit (संस्कृत)",
+              "maxMarks": 10,
+              "marksObtained": 9.5,
+              "grade": "A+"
+            }
+          ]
+        },
+        "halfYearly": {
+          "termKey": "half_yearly",
+          "termTitle": "Half-Yearly Examination (अर्धवार्षिक परीक्षा)",
+          "maxTotal": 100,
+          "obtainedTotal": 96,
+          "percentage": 96,
+          "grade": "A+ (Gold Rank)",
+          "rank": 1,
+          "remarks": "विद्यालय स्तर पर शीर्ष प्रदर्शन। प्रधानाचार्य द्वारा सम्मानित।",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 100,
+              "marksObtained": 98,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 100,
+              "marksObtained": 94,
+              "grade": "A+"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 100,
+              "marksObtained": 99,
+              "grade": "A+"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 100,
+              "marksObtained": 95,
+              "grade": "A+"
+            },
+            {
+              "subject": "Sanskrit (संस्कृत)",
+              "maxMarks": 100,
+              "marksObtained": 94,
+              "grade": "A+"
+            }
+          ]
+        }
+      },
+      "feesStatus": {
+        "totalFee": 14500,
+        "paidFee": 14500,
+        "dueFee": 0,
+        "status": "paid",
+        "lastReceiptNo": "REC-2026-7812"
+      }
+    },
+    {
+      "id": "STU-1003",
+      "rollNo": 1205,
+      "admissionNo": "JM-2021-1205",
+      "name": "अमित सैनी (Amit Saini)",
+      "gender": "male",
+      "class": "Class 12th-Science",
+      "parentPhone": "9414012345",
+      "fatherName": "Mr. रामनिवास सैनी (Ramniwas Saini)",
+      "motherName": "Mrs. सुशीला सैनी (Sushila Saini)",
+      "dob": "2008-07-15",
+      "address": "निकट बस स्टैंड, मनोता खुर्द, झुंझुनूं",
+      "avatar": "👨‍🎓",
+      "attendanceStats": {
+        "percentage": 92.5,
+        "daysPresent": 111,
+        "totalDays": 120,
+        "recentLog": [
+          {
+            "date": "2026-10-12",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-11",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-10",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-09",
+            "status": "absent"
+          },
+          {
+            "date": "2026-10-08",
+            "status": "present"
+          }
+        ]
+      },
+      "results": {
+        "firstMidterm": {
+          "termKey": "first_midterm",
+          "termTitle": "1st Mid-term Test (प्रथम परख परीक्षा)",
+          "maxTotal": 50,
+          "obtainedTotal": 42,
+          "percentage": 84,
+          "grade": "A",
+          "rank": 4,
+          "remarks": "भौतिक विज्ञान व रसायन में अच्छी तैयारी है।",
+          "subjects": [
+            {
+              "subject": "Physics (भौतिक विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            },
+            {
+              "subject": "Chemistry (रसायन विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 10,
+              "marksObtained": 8,
+              "grade": "A"
+            },
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 10,
+              "marksObtained": 8,
+              "grade": "A"
+            }
+          ]
+        },
+        "secondMidterm": {
+          "termKey": "second_midterm",
+          "termTitle": "2nd Mid-term Test (द्वितीय परख परीक्षा)",
+          "maxTotal": 50,
+          "obtainedTotal": 44,
+          "percentage": 88,
+          "grade": "A+",
+          "rank": 3,
+          "remarks": "प्रायोगिक कार्यों में उत्कृष्ट रुचि।",
+          "subjects": [
+            {
+              "subject": "Physics (भौतिक विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            },
+            {
+              "subject": "Chemistry (रसायन विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            },
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            }
+          ]
+        },
+        "halfYearly": {
+          "termKey": "half_yearly",
+          "termTitle": "Half-Yearly Examination (अर्धवार्षिक परीक्षा)",
+          "maxTotal": 100,
+          "obtainedTotal": 86.5,
+          "percentage": 86.5,
+          "grade": "A (First Class)",
+          "rank": 3,
+          "remarks": "बोर्ड परीक्षा में 90%+ का लक्ष्य रखें।",
+          "subjects": [
+            {
+              "subject": "Physics (भौतिक विज्ञान)",
+              "maxMarks": 100,
+              "marksObtained": 87,
+              "grade": "A"
+            },
+            {
+              "subject": "Chemistry (रसायन विज्ञान)",
+              "maxMarks": 100,
+              "marksObtained": 85,
+              "grade": "A"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 100,
+              "marksObtained": 91,
+              "grade": "A+"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 100,
+              "marksObtained": 83,
+              "grade": "A"
+            },
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 100,
+              "marksObtained": 87,
+              "grade": "A"
+            }
+          ]
+        }
+      },
+      "feesStatus": {
+        "totalFee": 22000,
+        "paidFee": 17000,
+        "dueFee": 5000,
+        "status": "partial",
+        "lastReceiptNo": "REC-2026-6502"
+      }
+    },
+    {
+      "id": "STU-1004",
+      "rollNo": 602,
+      "admissionNo": "JM-2024-602",
+      "name": "रोहित सैनी (Rohit Saini)",
+      "gender": "male",
+      "class": "Class 6th-A",
+      "parentPhone": "9414012345",
+      "fatherName": "Mr. रामनिवास सैनी (Ramniwas Saini)",
+      "motherName": "Mrs. सुशीला सैनी (Sushila Saini)",
+      "dob": "2014-11-03",
+      "address": "निकट बस स्टैंड, मनोता खुर्द, झुंझुनूं",
+      "avatar": "👦",
+      "attendanceStats": {
+        "percentage": 90,
+        "daysPresent": 108,
+        "totalDays": 120,
+        "recentLog": [
+          {
+            "date": "2026-10-12",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-11",
+            "status": "present"
+          },
+          {
+            "date": "2026-10-10",
+            "status": "leave"
+          },
+          {
+            "date": "2026-10-09",
+            "status": "present"
+          }
+        ]
+      },
+      "results": {
+        "firstMidterm": {
+          "termKey": "first_midterm",
+          "termTitle": "1st Mid-term Test (प्रथम परख परीक्षा)",
+          "maxTotal": 50,
+          "obtainedTotal": 39.5,
+          "percentage": 79,
+          "grade": "B+",
+          "rank": 6,
+          "remarks": "हस्तलेख सुधारें और नियमित अध्ययन करें।",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 10,
+              "marksObtained": 8,
+              "grade": "A"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 10,
+              "marksObtained": 7.5,
+              "grade": "B+"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 8,
+              "grade": "A"
+            },
+            {
+              "subject": "Sanskrit (संस्कृत)",
+              "maxMarks": 10,
+              "marksObtained": 7.5,
+              "grade": "B+"
+            }
+          ]
+        },
+        "secondMidterm": {
+          "termKey": "second_midterm",
+          "termTitle": "2nd Mid-term Test (द्वितीय परख परीक्षा)",
+          "maxTotal": 50,
+          "obtainedTotal": 42,
+          "percentage": 84,
+          "grade": "A",
+          "rank": 4,
+          "remarks": "सकारात्मक प्रगति। गणित में विशेष सुधार।",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 10,
+              "marksObtained": 8,
+              "grade": "A"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 10,
+              "marksObtained": 9,
+              "grade": "A+"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 10,
+              "marksObtained": 8.5,
+              "grade": "A"
+            },
+            {
+              "subject": "Sanskrit (संस्कृत)",
+              "maxMarks": 10,
+              "marksObtained": 8,
+              "grade": "A"
+            }
+          ]
+        },
+        "halfYearly": {
+          "termKey": "half_yearly",
+          "termTitle": "Half-Yearly Examination (अर्धवार्षिक परीक्षा)",
+          "maxTotal": 100,
+          "obtainedTotal": 82,
+          "percentage": 82,
+          "grade": "A",
+          "rank": 4,
+          "remarks": "अच्छा प्रदर्शन। वार्षिक परीक्षा में और श्रेष्ठ करें।",
+          "subjects": [
+            {
+              "subject": "Hindi (हिंदी)",
+              "maxMarks": 100,
+              "marksObtained": 84,
+              "grade": "A"
+            },
+            {
+              "subject": "English (अंग्रेजी)",
+              "maxMarks": 100,
+              "marksObtained": 78,
+              "grade": "B+"
+            },
+            {
+              "subject": "Mathematics (गणित)",
+              "maxMarks": 100,
+              "marksObtained": 89,
+              "grade": "A"
+            },
+            {
+              "subject": "Science (विज्ञान)",
+              "maxMarks": 100,
+              "marksObtained": 83,
+              "grade": "A"
+            },
+            {
+              "subject": "Sanskrit (संस्कृत)",
+              "maxMarks": 100,
+              "marksObtained": 76,
+              "grade": "B+"
+            }
+          ]
+        }
+      },
+      "feesStatus": {
+        "totalFee": 12000,
+        "paidFee": 12000,
+        "dueFee": 0,
+        "status": "paid",
+        "lastReceiptNo": "REC-2026-3401"
+      }
+    }
+  ],
+  "teacherAttendance": [
+    {
+      "id": "ATT-1791825876420",
+      "teacherId": "TCH-104",
+      "teacherName": "Mrs. Priya Sharma",
+      "date": "2026-10-12",
+      "time": "05:24 PM",
+      "status": "present",
+      "latitude": 28.025307378553144,
+      "longitude": 75.78910141001005,
+      "distanceFromCampusMeters": 10,
+      "isGpsVerified": true,
+      "verificationMethod": "admin_override",
+      "notes": "कैंपस GPS सत्यापित (10m दूरी)"
+    },
+    {
+      "id": "ATT-1",
+      "teacherId": "TCH-101",
+      "teacherName": "Mr. Sanjay Jinder",
+      "date": "2026-10-12",
+      "time": "07:48 AM",
+      "status": "present",
+      "latitude": 28.02542,
+      "longitude": 75.78911,
+      "distanceFromCampusMeters": 14,
+      "isGpsVerified": true,
+      "verificationMethod": "school_campus_geofence",
+      "notes": "ऑन-कैंपस बायोमेट्रिक एवं GPS सत्यापित"
+    },
+    {
+      "id": "ATT-2",
+      "teacherId": "TCH-102",
+      "teacherName": "Mrs. Manjeet",
+      "date": "2026-10-12",
+      "time": "07:55 AM",
+      "status": "present",
+      "latitude": 28.02541,
+      "longitude": 75.78913,
+      "distanceFromCampusMeters": 18,
+      "isGpsVerified": true,
+      "verificationMethod": "school_campus_geofence",
+      "notes": "प्रधानाचार्य कक्ष - GPS जियोफेंस प्रमाणित"
+    },
+    {
+      "id": "ATT-3",
+      "teacherId": "TCH-103",
+      "teacherName": "Mr. Rajesh Kumar",
+      "date": "2026-10-12",
+      "time": "08:02 AM",
+      "status": "present",
+      "latitude": 28.02538,
+      "longitude": 75.78909,
+      "distanceFromCampusMeters": 22,
+      "isGpsVerified": true,
+      "verificationMethod": "school_campus_geofence",
+      "notes": "कक्षा 10th-A प्रभारी"
+    }
+  ],
+  "notices": [
+    {
+      "id": "N-1",
+      "title": "सत्र 2026-27 नवीन प्रवेश प्रारंभ (नर्सरी से 12वीं कला व विज्ञान वर्ग)",
+      "date": "2026-10-12",
+      "category": "प्रवेश"
+    },
+    {
+      "id": "N-2",
+      "title": "द्वितीय परख (2nd Mid-term) परीक्षा परिणाम ऑनलाइन पोर्टल पर जारी",
+      "date": "2026-10-10",
+      "category": "परीक्षा"
+    },
+    {
+      "id": "N-3",
+      "title": "अभिभावक-शिक्षक बैठक (PTM) आगामी शनिवार को प्रातः 10:00 बजे आयोजित होगी",
+      "date": "2026-10-08",
+      "category": "बैठक"
+    },
+    {
+      "id": "N-4",
+      "title": "कक्षा 10वीं व 12वीं बोर्ड परीक्षार्थियों हेतु अतिरिक्त मार्गदर्शन कक्षाएं",
+      "date": "2026-10-05",
+      "category": "शैक्षणिक"
+    }
+  ]
+}
