@@ -1,0 +1,10 @@
+{
+  "name": "Jawahar Memorial Sikshansthan - School Portal",
+  "description": "जवाहर मेमोरियल शिक्षण संस्थान (मनोता खुर्द, झुंझुनूं) - स्मार्ट स्कूल पोर्टल। शिक्षक GPS जियोफेंस उपस्थिति, अभिभावक मोबाइल लॉगिन, बहु-संतान (Multi-child) 1st/2nd मिड-टर्म व अर्धवार्षिक परीक्षा परिणाम।",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
